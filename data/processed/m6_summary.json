@@ -1,0 +1,47 @@
+{
+  "mean_clv_per_policy": 521.3419072091538,
+  "mean_first_year_contribution_per_policy": 100.50998005240393,
+  "clv_converged": true,
+  "segments_with_different_action": 10,
+  "segments_different": [
+    "25-34|Midlands_East",
+    "25-34|North_West_Rest",
+    "35-49|London_SE",
+    "35-49|Midlands_East",
+    "35-49|North_West_Rest",
+    "50-64|London_SE",
+    "50-64|Midlands_East",
+    "65+|London_SE",
+    "65+|Midlands_East",
+    "65+|North_West_Rest"
+  ],
+  "clv_discount_segments": [
+    "17-24|London_SE",
+    "17-24|Midlands_East",
+    "17-24|North_West_Rest",
+    "25-34|London_SE",
+    "25-34|Midlands_East",
+    "25-34|North_West_Rest",
+    "35-49|London_SE",
+    "35-49|Midlands_East",
+    "35-49|North_West_Rest",
+    "50-64|London_SE",
+    "65+|London_SE",
+    "65+|Midlands_East",
+    "65+|North_West_Rest"
+  ],
+  "clv_increase_segments": [
+    "50-64|North_West_Rest"
+  ],
+  "nb_total_clv": {
+    "baseline": 780428.997351236,
+    "first_year_optimum": 806787.820115748,
+    "clv_optimum": 867299.0541852952
+  },
+  "total_first_year_contribution": {
+    "baseline": 1482712.9844878812,
+    "first_year_optimum": 1559466.9599146277,
+    "clv_optimum": 1527760.9235853537
+  },
+  "renewal_above_nb_segments": 7
+}

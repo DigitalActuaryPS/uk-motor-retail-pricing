@@ -1,0 +1,5 @@
+case,converged,segments_discount,segments_increase,segments_hold,segments_changed_vs_clv_base,mean_nb_change
+discount_rate=2%,True,13,1,1,0,-0.04229237501355069
+discount_rate=8%,True,13,2,0,1,-0.04065727415332226
+retention_shift=-5%,True,13,2,0,1,-0.04048574637176131
+cost_shift=+10%,True,6,8,1,8,-0.008744425183782437

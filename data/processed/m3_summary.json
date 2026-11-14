@@ -1,0 +1,39 @@
+{
+  "train_rows": 75358,
+  "validation_rows": 23333,
+  "test_rows": 20512,
+  "gbm_backend": "lightgbm",
+  "gbm_best_params": {
+    "learning_rate": 0.05,
+    "num_leaves": 15,
+    "min_child_samples": 200,
+    "subsample": 0.7,
+    "colsample_bytree": 0.7,
+    "reg_lambda": 0.0,
+    "n_trees": 114,
+    "backend": "lightgbm"
+  },
+  "gbm_search_seconds": 10.057315826416016,
+  "test_auc": {
+    "naive": 0.653028693132522,
+    "glm": 0.6986016881669055,
+    "gbm": 0.6951223338634112
+  },
+  "test_log_loss": {
+    "naive": 0.27308709671841647,
+    "glm": 0.2637884320058712,
+    "gbm": 0.2645370777388797
+  },
+  "test_brier": {
+    "naive": 0.07362337738628615,
+    "glm": 0.0721908093185552,
+    "gbm": 0.07229807150232566
+  },
+  "top_shap_features": [
+    "channel",
+    "ln_ratio",
+    "rank",
+    "month",
+    "region"
+  ]
+}

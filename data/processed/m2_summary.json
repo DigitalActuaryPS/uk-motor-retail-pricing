@@ -1,0 +1,17 @@
+{
+  "overall_conversion": 0.09201110710300915,
+  "overall_margin": 0.058034053783745,
+  "overpriced_segments": [
+    "17-24|London_SE",
+    "65+|London_SE"
+  ],
+  "underpriced_segments": [
+    "25-34|Midlands_East",
+    "25-34|North_West_Rest",
+    "35-49|North_West_Rest",
+    "50-64|Midlands_East",
+    "50-64|North_West_Rest"
+  ],
+  "conversion_rank1": 0.19732142857142856,
+  "conversion_rank9": 0.051625784369652025
+}

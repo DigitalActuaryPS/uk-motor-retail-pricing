@@ -1,0 +1,211 @@
+# Calibration configuration for the SIMULATED market. Simulated data only.
+# Every parameter has value, status and source_note.
+# status: illustrative_assumption (default) or user_supplied_public (requester fills source_note).
+# No default is attributed to any named publisher.
+
+volumes:
+  n_quotes:               {value: 200000, status: illustrative_assumption, source_note: ""}
+  start_date:             {value: "2023-01-01", status: illustrative_assumption, source_note: ""}
+  n_months:               {value: 24, status: illustrative_assumption, source_note: ""}
+  new_business_share:     {value: 0.70, status: illustrative_assumption, source_note: ""}
+  volume_seasonality_amplitude: {value: 0.10, status: illustrative_assumption, source_note: ""}
+  age_band_mix:
+    value: {"17-24": 0.08, "25-34": 0.22, "35-49": 0.30, "50-64": 0.25, "65+": 0.15}
+    status: illustrative_assumption
+    source_note: ""
+  region_mix:
+    value: {London_SE: 0.32, Midlands_East: 0.30, North_West_Rest: 0.38}
+    status: illustrative_assumption
+    source_note: ""
+  risk_band_mix:
+    value: {low: 0.35, medium: 0.45, high: 0.20}
+    status: illustrative_assumption
+    source_note: ""
+  channel_mix_new_business:
+    value: {PCW: 0.68, direct: 0.22, broker: 0.10}
+    status: illustrative_assumption
+    source_note: ""
+  channel_mix_renewal:
+    value: {PCW: 0.55, direct: 0.30, broker: 0.15}
+    status: illustrative_assumption
+    source_note: ""
+  renewal_tenure_probabilities:
+    value: [0.28, 0.20, 0.15, 0.11, 0.09, 0.07, 0.06, 0.04]
+    status: illustrative_assumption
+    source_note: ""
+  test_share_of_new_business: {value: 0.15, status: illustrative_assumption, source_note: ""}
+  test_arm_probabilities:
+    value: {control: 0.30, "T-5": 0.175, "T-2": 0.175, "T+2": 0.175, "T+5": 0.175}
+    status: illustrative_assumption
+    source_note: ""
+  test_arm_price_changes:
+    value: {control: 0.0, "T-5": -0.05, "T-2": -0.02, "T+2": 0.02, "T+5": 0.05}
+    status: illustrative_assumption
+    source_note: ""
+
+market:
+  average_premium_level:  {value: 600.0, status: illustrative_assumption, source_note: ""}
+  annual_premium_trend:   {value: 0.06, status: illustrative_assumption, source_note: ""}
+  market_shock_sd:        {value: 0.012, status: illustrative_assumption, source_note: ""}
+  market_shock_persistence: {value: 0.70, status: illustrative_assumption, source_note: ""}
+  age_band_premium_relativity:
+    value: {"17-24": 2.00, "25-34": 1.15, "35-49": 0.95, "50-64": 0.85, "65+": 0.95}
+    status: illustrative_assumption
+    source_note: ""
+  region_premium_relativity:
+    value: {London_SE: 1.25, Midlands_East: 0.95, North_West_Rest: 0.90}
+    status: illustrative_assumption
+    source_note: ""
+  risk_band_premium_relativity:
+    value: {low: 0.92, medium: 1.00, high: 1.18}
+    status: illustrative_assumption
+    source_note: ""
+  profile_noise_sd:       {value: 0.10, status: illustrative_assumption, source_note: ""}
+  n_competitors:          {value: 8, status: illustrative_assumption, source_note: ""}
+  competitor_mean_offsets:
+    value: [-0.07, -0.04, -0.02, 0.0, 0.02, 0.04, 0.07, 0.10]
+    status: illustrative_assumption
+    source_note: ""
+  competitor_price_noise_sd: {value: 0.10, status: illustrative_assumption, source_note: ""}
+
+our_pricing:
+  age_band_position_offset:
+    value: {"17-24": 0.05, "25-34": -0.01, "35-49": 0.00, "50-64": -0.04, "65+": 0.03}
+    status: illustrative_assumption
+    source_note: ""
+  region_position_offset:
+    value: {London_SE: 0.03, Midlands_East: -0.01, North_West_Rest: -0.02}
+    status: illustrative_assumption
+    source_note: ""
+  own_price_noise_sd:     {value: 0.06, status: illustrative_assumption, source_note: ""}
+  repricing_interval_months: {value: 3, status: illustrative_assumption, source_note: ""}
+  intent_price_loading:   {value: 0.025, status: illustrative_assumption, source_note: ""}
+
+conversion_response:
+  intercept:              {value: -2.65, status: illustrative_assumption, source_note: ""}
+  channel_effect:
+    value: {PCW: 0.0, direct: 0.75, broker: 0.5}
+    status: illustrative_assumption
+    source_note: ""
+  age_band_effect:
+    value: {"17-24": -0.30, "25-34": 0.00, "35-49": 0.10, "50-64": 0.15, "65+": 0.20}
+    status: illustrative_assumption
+    source_note: ""
+  region_effect:
+    value: {London_SE: -0.10, Midlands_East: 0.05, North_West_Rest: 0.05}
+    status: illustrative_assumption
+    source_note: ""
+  risk_band_effect:
+    value: {low: 0.05, medium: 0.0, high: -0.10}
+    status: illustrative_assumption
+    source_note: ""
+  true_price_coefficient_by_channel:
+    value: {PCW: -7.0, direct: -4.0, broker: -2.5}
+    status: illustrative_assumption
+    source_note: ""
+  true_price_multiplier_by_age_band:
+    value: {"17-24": 1.15, "25-34": 1.10, "35-49": 1.00, "50-64": 0.90, "65+": 0.80}
+    status: illustrative_assumption
+    source_note: ""
+  rank_log_coefficient:   {value: -0.45, status: illustrative_assumption, source_note: ""}
+  top_rank_bonus:         {value: 0.30, status: illustrative_assumption, source_note: ""}
+  rank_sensitivity_by_channel:
+    value: {PCW: 1.0, direct: 0.15, broker: 0.10}
+    status: illustrative_assumption
+    source_note: ""
+  seasonality_amplitude:  {value: 0.12, status: illustrative_assumption, source_note: ""}
+  seasonality_peak_month: {value: 3, status: illustrative_assumption, source_note: ""}
+  latent_intent_coefficient: {value: 0.60, status: illustrative_assumption, source_note: ""}
+
+renewal_response:
+  intercept:              {value: 1.3, status: illustrative_assumption, source_note: ""}
+  channel_effect:
+    value: {PCW: 0.0, direct: 0.5, broker: 0.4}
+    status: illustrative_assumption
+    source_note: ""
+  age_band_effect:
+    value: {"17-24": -0.30, "25-34": -0.10, "35-49": 0.05, "50-64": 0.20, "65+": 0.45}
+    status: illustrative_assumption
+    source_note: ""
+  tenure_log_coefficient: {value: 0.25, status: illustrative_assumption, source_note: ""}
+  price_change_coefficient: {value: -4.0, status: illustrative_assumption, source_note: ""}
+  market_ratio_coefficient_by_channel:
+    value: {PCW: -3.0, direct: -1.8, broker: -1.0}
+    status: illustrative_assumption
+    source_note: ""
+  rank_log_coefficient:   {value: -0.15, status: illustrative_assumption, source_note: ""}
+  latent_intent_coefficient: {value: 0.35, status: illustrative_assumption, source_note: ""}
+  trend_passthrough:      {value: 1.0, status: illustrative_assumption, source_note: ""}
+  rate_action_by_age_band:
+    value: {"17-24": 0.02, "25-34": 0.01, "35-49": 0.00, "50-64": 0.00, "65+": 0.01}
+    status: illustrative_assumption
+    source_note: ""
+  change_noise_sd:        {value: 0.04, status: illustrative_assumption, source_note: ""}
+  prior_premium_noise_sd: {value: 0.07, status: illustrative_assumption, source_note: ""}
+  intent_price_loading:   {value: 0.006, status: illustrative_assumption, source_note: ""}
+
+costs:
+  unit_cost_base:         {value: 460.0, status: illustrative_assumption, source_note: ""}
+  age_band_cost_relativity:
+    value: {"17-24": 1.92, "25-34": 1.12, "35-49": 0.93, "50-64": 0.86, "65+": 0.94}
+    status: illustrative_assumption
+    source_note: ""
+  region_cost_relativity:
+    value: {London_SE: 1.22, Midlands_East: 0.95, North_West_Rest: 0.90}
+    status: illustrative_assumption
+    source_note: ""
+  risk_band_cost_relativity:
+    value: {low: 0.94, medium: 1.00, high: 1.12}
+    status: illustrative_assumption
+    source_note: ""
+  expense_per_policy:     {value: 45.0, status: illustrative_assumption, source_note: ""}
+  acquisition_cost_by_channel:
+    value: {PCW: 85.0, direct: 55.0, broker: 70.0}
+    status: illustrative_assumption
+    source_note: ""
+
+clv:
+  discount_rate:          {value: 0.05, status: illustrative_assumption, source_note: ""}
+  horizon_years:          {value: 5, status: illustrative_assumption, source_note: ""}
+  renewal_premium_growth: {value: 0.06, status: illustrative_assumption, source_note: ""}
+  unit_cost_growth:       {value: 0.03, status: illustrative_assumption, source_note: ""}
+
+modelling:
+  seed:                   {value: 20240601, status: illustrative_assumption, source_note: ""}
+  train_months:           {value: 15, status: illustrative_assumption, source_note: ""}
+  validation_months:      {value: 5, status: illustrative_assumption, source_note: ""}
+  gbm_search_iterations:  {value: 12, status: illustrative_assumption, source_note: ""}
+  scenario_price_changes: {value: [-0.05, -0.02, 0.0, 0.02, 0.05], status: illustrative_assumption, source_note: ""}
+  elasticity_step:        {value: 0.01, status: illustrative_assumption, source_note: ""}
+  bootstrap_resamples:    {value: 200, status: illustrative_assumption, source_note: ""}
+
+competitor_analysis:
+  position_flag_threshold: {value: 0.03, status: illustrative_assumption, source_note: ""}
+
+optimisation:
+  price_change_lower:     {value: -0.05, status: illustrative_assumption, source_note: ""}
+  price_change_upper:     {value: 0.05, status: illustrative_assumption, source_note: ""}
+  min_portfolio_margin:   {value: 0.22, status: illustrative_assumption, source_note: ""}
+  min_volume_ratio:       {value: 0.95, status: illustrative_assumption, source_note: ""}
+  min_renewal_volume_ratio: {value: 0.97, status: illustrative_assumption, source_note: ""}
+  max_rank_deterioration: {value: 0.40, status: illustrative_assumption, source_note: ""}
+  renewal_price_change_cap: {value: 0.10, status: illustrative_assumption, source_note: ""}
+  rank_smoothing_width:   {value: 0.004, status: illustrative_assumption, source_note: ""}
+
+governance:
+  psi_amber:              {value: 0.10, status: illustrative_assumption, source_note: ""}
+  psi_red:                {value: 0.25, status: illustrative_assumption, source_note: ""}
+  stress_elasticity_multipliers: {value: [0.7, 1.3], status: illustrative_assumption, source_note: ""}
+  stress_competitor_price_shifts: {value: [-0.05, 0.05], status: illustrative_assumption, source_note: ""}
+  stress_cost_shifts:     {value: [0.05, 0.10], status: illustrative_assumption, source_note: ""}
+  clv_discount_rates:     {value: [0.02, 0.05, 0.08], status: illustrative_assumption, source_note: ""}
+  clv_retention_shifts:   {value: [-0.05, 0.05], status: illustrative_assumption, source_note: ""}
+
+manual_input:
+  age_bands:     {value: ["17-24", "25-34", "35-49", "50-64", "65+"], status: illustrative_assumption, source_note: ""}
+  regions:       {value: [London_SE, Midlands_East, North_West_Rest], status: illustrative_assumption, source_note: ""}
+  vehicle_groups: {value: [small, medium, large, performance], status: illustrative_assumption, source_note: ""}
+  no_claims_bands: {value: ["0", "1-2", "3-5", "6+"], status: illustrative_assumption, source_note: ""}
+  cover_types:   {value: [comprehensive, tpft, tpo], status: illustrative_assumption, source_note: ""}
+  mileage_bands: {value: ["0-5000", "5001-8000", "8001-12000", "12001+"], status: illustrative_assumption, source_note: ""}
+  min_quotes_for_inference: {value: 30, status: illustrative_assumption, source_note: ""}

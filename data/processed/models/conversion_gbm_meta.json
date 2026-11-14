@@ -1,0 +1,1 @@
+{"backend": "lightgbm", "k": 8, "params": {"learning_rate": 0.05, "num_leaves": 15, "min_child_samples": 200, "subsample": 0.7, "colsample_bytree": 0.7, "reg_lambda": 0.0, "n_trees": 114, "backend": "lightgbm"}}

@@ -1,0 +1,76 @@
+{
+  "converged": {
+    "calibrated": true,
+    "observational": true
+  },
+  "iterations": {
+    "calibrated": 4,
+    "observational": 4
+  },
+  "min_constraint_slack": {
+    "calibrated": -2.5200327935515077e-14,
+    "observational": -9.439891576756843e-12
+  },
+  "exact_min_constraint_slack": {
+    "calibrated": 5.551115123125783e-16,
+    "observational": 5.551115123125783e-16
+  },
+  "contribution_gain_calibrated": {
+    "model": 0.05176590225468125,
+    "true_process": 0.042346363219433636
+  },
+  "contribution_gain_observational": {
+    "model": 0.051560793709437114,
+    "true_process": 0.0413612502325702
+  },
+  "binding_constraints": [
+    "nb_rank_cap:25-34|Midlands_East",
+    "nb_rank_cap:25-34|North_West_Rest",
+    "nb_rank_cap:35-49|London_SE",
+    "nb_rank_cap:35-49|Midlands_East",
+    "nb_rank_cap:35-49|North_West_Rest",
+    "nb_rank_cap:50-64|London_SE",
+    "nb_rank_cap:50-64|Midlands_East",
+    "nb_rank_cap:50-64|North_West_Rest",
+    "nb_rank_cap:65+|London_SE",
+    "nb_rank_cap:65+|Midlands_East",
+    "nb_rank_cap:65+|North_West_Rest",
+    "renewal_rank_cap:25-34|London_SE",
+    "renewal_rank_cap:25-34|Midlands_East",
+    "renewal_rank_cap:25-34|North_West_Rest",
+    "renewal_rank_cap:35-49|London_SE",
+    "renewal_rank_cap:35-49|Midlands_East",
+    "renewal_rank_cap:35-49|North_West_Rest",
+    "renewal_rank_cap:50-64|London_SE",
+    "renewal_rank_cap:50-64|Midlands_East",
+    "renewal_rank_cap:50-64|North_West_Rest",
+    "renewal_rank_cap:65+|London_SE",
+    "renewal_rank_cap:65+|Midlands_East",
+    "renewal_rank_cap:65+|North_West_Rest",
+    "renewal_change_cap:17-24|London_SE",
+    "renewal_change_cap:17-24|Midlands_East",
+    "renewal_change_cap:17-24|North_West_Rest"
+  ],
+  "nb_increase_segments": [
+    "25-34|Midlands_East",
+    "25-34|North_West_Rest",
+    "35-49|London_SE",
+    "35-49|Midlands_East",
+    "35-49|North_West_Rest",
+    "50-64|London_SE",
+    "50-64|Midlands_East",
+    "50-64|North_West_Rest",
+    "65+|London_SE",
+    "65+|Midlands_East",
+    "65+|North_West_Rest"
+  ],
+  "nb_discount_segments": [
+    "17-24|London_SE",
+    "17-24|Midlands_East",
+    "17-24|North_West_Rest",
+    "25-34|London_SE"
+  ],
+  "nb_hold_segments": [],
+  "planning_book_nb_quotes": 20512,
+  "planning_book_renewal_quotes": 10260
+}

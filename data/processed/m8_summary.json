@@ -1,0 +1,19 @@
+{
+  "quality_checks_passed": 31,
+  "quality_checks_total": 31,
+  "oot_months": 9,
+  "oot_glm_auc_min": 0.6895626941940786,
+  "oot_glm_auc_max": 0.7083868406348335,
+  "oot_glm_actual_to_expected_min": 0.8981563525122397,
+  "oot_glm_actual_to_expected_max": 1.1078843077019145,
+  "psi_max": 0.09949841697049425,
+  "psi_max_item": "model_score",
+  "psi_red_count": 0,
+  "psi_amber_count": 0,
+  "stress_min_gain": 0.04783116784475494,
+  "stress_min_gain_scenario": "elasticity x1.3",
+  "stress_scenarios": 8,
+  "stress_all_gains_positive": true,
+  "stress_floor_breaches_caused_by_decision": 0,
+  "stress_baseline_below_margin_floor": 3
+}

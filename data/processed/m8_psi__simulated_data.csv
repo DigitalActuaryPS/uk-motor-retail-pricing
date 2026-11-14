@@ -1,0 +1,15 @@
+item,type,psi,rag,book
+ln_ratio,feature,0.04081261651890777,green,new_business
+rank,feature,0.037155328815516676,green,new_business
+cheapest_gap,feature,0.031060821409752505,green,new_business
+ln_comp_spread,feature,0.0006783207108903142,green,new_business
+channel,feature,0.00032841232506138074,green,new_business
+age_band,feature,0.0003188016324095697,green,new_business
+region,feature,1.9805685502936016e-05,green,new_business
+risk_band,feature,4.248969805019567e-05,green,new_business
+model_score,score,0.09949841697049425,green,new_business
+ln_change,feature,0.0007256310762572179,green,renewal
+ln_ratio,feature,0.0009419963962205507,green,renewal
+rank,feature,0.0006012035607409381,green,renewal
+tenure,feature,0.00010769743243671202,green,renewal
+model_score,score,0.0007945584696146401,green,renewal

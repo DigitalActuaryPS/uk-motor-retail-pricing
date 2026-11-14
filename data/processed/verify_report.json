@@ -1,0 +1,58 @@
+{
+ "docs/executive_summary.md equals re-render from current outputs": {
+  "pass": true,
+  "detail": ""
+ },
+ "README.md equals re-render from current outputs": {
+  "pass": true,
+  "detail": ""
+ },
+ "number registry matches recomputed values": {
+  "pass": true,
+  "detail": ""
+ },
+ "docs/executive_summary.md has no unregistered numbers": {
+  "pass": true,
+  "detail": ""
+ },
+ "README.md has no unregistered numbers": {
+  "pass": true,
+  "detail": ""
+ },
+ "no claims, severity, frequency or loss terms in model-fitting code (non-comment lines)": {
+  "pass": true,
+  "detail": ""
+ },
+ "every config parameter has value, status and source_note": {
+  "pass": true,
+  "detail": "96 parameters"
+ },
+ "config validate() reports no problems": {
+  "pass": true,
+  "detail": ""
+ },
+ ".gitignore excludes manual quotes file": {
+  "pass": true,
+  "detail": ""
+ },
+ "manual template is header only": {
+  "pass": true,
+  "detail": ""
+ },
+ "no manual quotes file shipped": {
+  "pass": true,
+  "detail": ""
+ },
+ "no em or en dashes": {
+  "pass": true,
+  "detail": ""
+ },
+ "no TODO, FIXME or stub markers": {
+  "pass": true,
+  "detail": ""
+ },
+ "same-seed full-size generator runs give identical hashes": {
+  "pass": true,
+  "detail": "['165213e22e28bcefbecb9312d39f782ef975bcd24caf7fc173ad926e5f4fab8f'] ['165213e22e28bcefbecb9312d39f782ef975bcd24caf7fc173ad926e5f4fab8f'] stored=165213e22e28bcef"
+ }
+}

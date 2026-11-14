@@ -1,0 +1,20 @@
+# Model risk and limitations register
+
+**Simulated data.** Illustrative project register. It is not a demonstration of regulatory compliance and does not follow any named regulator template.
+
+| ID | Area | Risk | Rating | Impact | Control | Status |
+|---|---|---|---|---|---|---|
+| R01 | Data | All customer-level data is simulated from illustrative assumptions | High | Results show method, not market truth. Any real use needs real quote, conversion and retention data. | Label every output 'Simulated data'. Calibration status table. No claim of real experience. | Open by design |
+| R02 | Elasticity | Observational price effects are biased when price is set with information the model cannot see | High | Observational GLM and GBM elasticities are less negative than the truth (see Module 4 table). | Randomised price test. Optimiser uses the experiment-calibrated response. Oracle model shows the cause. | Mitigated in simulation. Needs a live test in practice |
+| R03 | Elasticity | Randomised test is too thin to resolve small channels | Medium | Broker arm confidence interval spans zero. Calibration pools direct and broker. | Pool thin channels. Report intervals. Increase test share or duration. | Open |
+| R04 | Retention | No randomised test for renewal price changes, so renewal elasticity is observational | High | Renewal response may be biased. Renewal moves in the optimiser rely on it. | Cap renewal moves. Stress elasticity. Add a renewal test before use. | Open |
+| R05 | Profitability | Cost per policy is a fixed configuration value, not a loss cost model | High | Contribution is a proxy. Margin conclusions depend on the assumed cost. | Excluded by design: no claims model. Cost shifts stress-tested. Config status flags every assumption. | Accepted scope limit |
+| R06 | Optimisation | SLSQP finds a local optimum on a piecewise smooth problem | Medium | Another start could give a different solution. | Smoothed rank, analytic Jacobians checked against finite differences, local optimality test, constraint slack report. | Mitigated |
+| R07 | Optimisation | Rank is smoothed inside the optimiser but exact in evaluation | Low | Small gap between solver and evaluated constraints. | Evaluate on exact rank. Report slack after exact evaluation. | Mitigated |
+| R08 | Model | Out-of-time drift in competitor position or mix | Medium | Conversion model degrades as the market moves. | Monthly out-of-time metrics and PSI with amber and red thresholds. | Monitored |
+| R09 | Model | Gradient boosting can extrapolate poorly outside the observed price range | Medium | Price-response curves from GBM may be unreliable beyond the training range. | Monotone constraints on price features. GLM used for optimisation. Curves compared with the truth. | Mitigated |
+| R10 | Market data | Competitor view limited to eight simulated competitors | Medium | Real PCW lists vary in length and include insurers we cannot see. | Manual quote route for sense checks only. Never enters models. | Open |
+| R11 | Customer outcomes | Segment-level moves can hide adverse individual outcomes | Medium | Averages per segment do not guarantee fair outcomes for every customer. | Renewal cap and rank guardrails. Illustrative renewal versus new business check. Compliance review outside this project. | Open |
+| R12 | Governance | Fair-value and conduct checks here are illustrative project controls | High | They do not demonstrate regulatory compliance. | Stated in README, regulatory notes and this register. Independent review required before any real use. | Open by design |
+| R13 | Manual input | Hand-entered quotes are few, from one site and one time | Low | Fewer than 30 quotes is anecdotal and supports no inference. | Sample size printed with every comparison. No use in calibration, training or optimisation. | Mitigated |
+| R14 | Reproducibility | Results depend on the seed and the simulation design | Low | Different seeds shift point estimates. | Fixed seed, output hash check, determinism test. | Mitigated |
