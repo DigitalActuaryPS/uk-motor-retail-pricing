@@ -22,7 +22,7 @@ Run order (also the Makefile order): `data`, `competitor`, `conversion`, `renewa
 
 All numbers in this section are read from files in `data/processed/` by `src/retailpricing/reporting/build.py` and checked by `scripts/verify.py`.
 
-**Data (M1).** 200,000 simulated quotes: 140,108 new business and 59,892 renewal. 20,905 new business rows are a randomised price test and are excluded from model fitting. New business conversion 9.2%, renewal rate 78.3%. 31 of 31 data quality checks pass. Frame hash prefix `165213e22e28bcef`; a second run with the same seed gives the same hash.
+**Data (M1).** 200,000 simulated quotes: 140,108 new business and 59,892 renewal. 20,905 new business rows are a randomised price test and are excluded from model fitting. New business conversion 9.2%, renewal rate 78.3%. 31 of 31 data quality checks pass. Frame hash prefix `1b816f6061cc7f74`; a second run with the same seed gives the same hash.
 
 **Competitor position (M2).** Conversion falls from 19.7% at rank 1 to 5.2% at rank 9.
 
