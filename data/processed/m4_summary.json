@@ -1,0 +1,58 @@
+{
+  "elasticity_overall": {
+    "true": -6.031398258405901,
+    "glm_observational": -3.7025673944247366,
+    "gbm_observational": -4.050174905890479,
+    "experiment": -5.752692400481649,
+    "ci_low": -7.065633094796576,
+    "ci_high": -4.302742068336707,
+    "glm_with_latent_intent": -5.8265132645709485
+  },
+  "elasticity_by_channel": {
+    "PCW": {
+      "true": -9.228210488266976,
+      "glm_observational": -6.900578254040577,
+      "gbm_observational": -6.726908768126748,
+      "experiment": -9.19953379931032,
+      "ci_low": -11.186963440734157,
+      "ci_high": -7.328838596554713,
+      "glm_with_latent_intent": -9.103459777153232
+    },
+    "direct": {
+      "true": -3.567808521325108,
+      "glm_observational": -1.4639809320958426,
+      "gbm_observational": -1.6772936096841717,
+      "experiment": -3.876068926318986,
+      "ci_low": -6.335034496067628,
+      "ci_high": -1.826820279643474,
+      "glm_with_latent_intent": -3.519166975130861
+    },
+    "broker": {
+      "true": -2.367039167657089,
+      "glm_observational": 0.5828269100282429,
+      "gbm_observational": -1.4709772751992003,
+      "experiment": 1.1686989310275142,
+      "ci_low": -2.1073011368335006,
+      "ci_high": 4.455313866981674,
+      "glm_with_latent_intent": -1.4896646822353121
+    }
+  },
+  "endogeneity": {
+    "corr_ln_ratio_intent": 0.27891141843827666,
+    "slope_intent_on_ln_ratio": 3.2017277185208655,
+    "sd_ln_ratio": 0.08659787140973442,
+    "oracle_intent_coefficient": 0.5997557935813009,
+    "true_intent_coefficient": 0.6
+  },
+  "calibration_shift": {
+    "PCW": -2.5147976855478986,
+    "direct": -1.1710364637414312,
+    "broker": -3.4462321060539653
+  },
+  "calibration_targets": {
+    "PCW": -9.19953379931032,
+    "direct": -2.455399650327313,
+    "broker": -2.455399650327313
+  },
+  "experiment_rows": 20905
+}

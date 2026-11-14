@@ -1,0 +1,9 @@
+case,mean_clv_per_policy
+discount_rate=2%,550.2504247848187
+discount_rate=5%,521.3419072091538
+discount_rate=8%,495.41922140275506
+retention_shift=-5%,460.99501751931933
+retention_shift=+5%,589.2905170598162
+cost_shift=+0%,521.3419072091538
+cost_shift=+5%,445.5231712847342
+cost_shift=+10%,369.7044353603147

@@ -1,0 +1,337 @@
+{
+ "rows": {
+  "text": "200,000",
+  "value": 200000.0,
+  "source": "m1_summary.json"
+ },
+ "nb_rows": {
+  "text": "140,108",
+  "value": 140108.0,
+  "source": "m1_summary.json"
+ },
+ "ren_rows": {
+  "text": "59,892",
+  "value": 59892.0,
+  "source": "m1_summary.json"
+ },
+ "test_rows": {
+  "text": "20,905",
+  "value": 20905.0,
+  "source": "m1_summary.json"
+ },
+ "nb_conv": {
+  "text": "9.2%",
+  "value": 0.09201110710300915,
+  "source": "m1_summary.json"
+ },
+ "ren_rate": {
+  "text": "78.3%",
+  "value": 0.7833266546450277,
+  "source": "m1_summary.json"
+ },
+ "dq_pass": {
+  "text": "31",
+  "value": 31.0,
+  "source": "m1_summary.json"
+ },
+ "dq_total": {
+  "text": "31",
+  "value": 31.0,
+  "source": "m1_summary.json"
+ },
+ "sha": {
+  "text": "165213e22e28bcef",
+  "value": 0.0,
+  "source": "m1_summary.json"
+ },
+ "conv_r1": {
+  "text": "19.7%",
+  "value": 0.19732142857142856,
+  "source": "m2_summary.json"
+ },
+ "conv_r9": {
+  "text": "5.2%",
+  "value": 0.051625784369652025,
+  "source": "m2_summary.json"
+ },
+ "auc_glm": {
+  "text": "0.699",
+  "value": 0.6986016881669055,
+  "source": "m3_summary.json"
+ },
+ "ll_glm": {
+  "text": "0.264",
+  "value": 0.2637884320058712,
+  "source": "m3_summary.json"
+ },
+ "auc_gbm": {
+  "text": "0.695",
+  "value": 0.6951223338634112,
+  "source": "m3_summary.json"
+ },
+ "ll_gbm": {
+  "text": "0.265",
+  "value": 0.2645370777388797,
+  "source": "m3_summary.json"
+ },
+ "auc_naive": {
+  "text": "0.653",
+  "value": 0.653028693132522,
+  "source": "m3_summary.json"
+ },
+ "ll_naive": {
+  "text": "0.273",
+  "value": 0.27308709671841647,
+  "source": "m3_summary.json"
+ },
+ "el_true": {
+  "text": "-6.03",
+  "value": -6.031398258405901,
+  "source": "m4_summary.json"
+ },
+ "el_glm_observational": {
+  "text": "-3.70",
+  "value": -3.7025673944247366,
+  "source": "m4_summary.json"
+ },
+ "el_gbm_observational": {
+  "text": "-4.05",
+  "value": -4.050174905890479,
+  "source": "m4_summary.json"
+ },
+ "el_experiment": {
+  "text": "-5.75",
+  "value": -5.752692400481649,
+  "source": "m4_summary.json"
+ },
+ "el_ci_low": {
+  "text": "-7.07",
+  "value": -7.065633094796576,
+  "source": "m4_summary.json"
+ },
+ "el_ci_high": {
+  "text": "-4.30",
+  "value": -4.302742068336707,
+  "source": "m4_summary.json"
+ },
+ "el_glm_with_latent_intent": {
+  "text": "-5.83",
+  "value": -5.8265132645709485,
+  "source": "m4_summary.json"
+ },
+ "corr_u": {
+  "text": "0.28",
+  "value": 0.27891141843827666,
+  "source": "m4_summary.json"
+ },
+ "br_lo": {
+  "text": "-2.11",
+  "value": -2.1073011368335006,
+  "source": "m4_summary.json"
+ },
+ "br_hi": {
+  "text": "4.46",
+  "value": 4.455313866981674,
+  "source": "m4_summary.json"
+ },
+ "nb_pol_chg": {
+  "text": "-4.0%",
+  "value": -0.039782166200731495,
+  "source": "m5 model"
+ },
+ "nb_conv_b": {
+  "text": "8.13%",
+  "value": 0.0813319022132605,
+  "source": "m5 model"
+ },
+ "nb_conv_o": {
+  "text": "7.81%",
+  "value": 0.0780963429619909,
+  "source": "m5 model"
+ },
+ "gwp_chg": {
+  "text": "-0.23%",
+  "value": -0.0023042483679922565,
+  "source": "m5 model"
+ },
+ "contrib_chg": {
+  "text": "+5.2%",
+  "value": 0.05176590225468125,
+  "source": "m5 model"
+ },
+ "contrib_chg_true": {
+  "text": "+4.2%",
+  "value": 0.042346363219433636,
+  "source": "m5 true"
+ },
+ "gwp_chg_true": {
+  "text": "-1.04%",
+  "value": -0.010394625378798428,
+  "source": "m5 true"
+ },
+ "nb_pol_chg_true": {
+  "text": "-4.8%",
+  "value": -0.04839890310621031,
+  "source": "m5 true"
+ },
+ "margin_b": {
+  "text": "23.1%",
+  "value": 0.2314314485031759,
+  "source": "m5 model"
+ },
+ "margin_o": {
+  "text": "24.4%",
+  "value": 0.2439738826660166,
+  "source": "m5 model"
+ },
+ "contrib_abs": {
+  "text": "76,754",
+  "value": 76753.9754267463,
+  "source": "m5 model"
+ },
+ "n_disc": {
+  "text": "4",
+  "value": 4.0,
+  "source": "m5 segments"
+ },
+ "disc_list": {
+  "text": "17-24|London SE, 17-24|Midlands East, 17-24|North West Rest, 25-34|London SE",
+  "value": 0.0,
+  "source": "m5 segments"
+ },
+ "n_inc": {
+  "text": "11",
+  "value": 11.0,
+  "source": "m5 segments"
+ },
+ "n_hold": {
+  "text": "0",
+  "value": 0.0,
+  "source": "m5 segments"
+ },
+ "n_ren_cap": {
+  "text": "3",
+  "value": 3.0,
+  "source": "m5 segments"
+ },
+ "ren_cap": {
+  "text": "10%",
+  "value": 0.1,
+  "source": "config"
+ },
+ "ren_y_min": {
+  "text": "+1.1%",
+  "value": 0.0112328293220528,
+  "source": "m5 segments"
+ },
+ "ren_y_max": {
+  "text": "+1.9%",
+  "value": 0.0190504120877601,
+  "source": "m5 segments"
+ },
+ "ren_avg_min": {
+  "text": "7.8%",
+  "value": 0.0779841481732691,
+  "source": "m5 segments"
+ },
+ "ren_avg_max": {
+  "text": "10.0%",
+  "value": 0.0999,
+  "source": "m5 segments"
+ },
+ "n_bind": {
+  "text": "26",
+  "value": 26.0,
+  "source": "m5_summary.json"
+ },
+ "opt_iters": {
+  "text": "4",
+  "value": 4.0,
+  "source": "m5_summary.json"
+ },
+ "gain_obs_true": {
+  "text": "4.1%",
+  "value": 0.0413612502325702,
+  "source": "m5_summary.json"
+ },
+ "clv_mean": {
+  "text": "521",
+  "value": 521.3419072091538,
+  "source": "m6_summary.json"
+ },
+ "fy_mean": {
+  "text": "101",
+  "value": 100.50998005240393,
+  "source": "m6_summary.json"
+ },
+ "clv_diff": {
+  "text": "10",
+  "value": 10.0,
+  "source": "m6_summary.json"
+ },
+ "clv_nb_pol": {
+  "text": "+25.8%",
+  "value": 0.2581319735680536,
+  "source": "m6 decision sets"
+ },
+ "clv_total_chg": {
+  "text": "+11.1%",
+  "value": 0.1113106472579759,
+  "source": "m6 decision sets"
+ },
+ "fy_total_chg": {
+  "text": "+3.4%",
+  "value": 0.03377478650072385,
+  "source": "m6 decision sets"
+ },
+ "clv_fy_contrib_chg": {
+  "text": "+3.0%",
+  "value": 0.030382103325972798,
+  "source": "m6 decision sets"
+ },
+ "oot_lo": {
+  "text": "0.690",
+  "value": 0.6895626941940786,
+  "source": "m8_summary.json"
+ },
+ "oot_hi": {
+  "text": "0.708",
+  "value": 0.7083868406348335,
+  "source": "m8_summary.json"
+ },
+ "psi_max": {
+  "text": "0.099",
+  "value": 0.09949841697049425,
+  "source": "m8_summary.json"
+ },
+ "stress_min": {
+  "text": "4.8%",
+  "value": 0.04783116784475494,
+  "source": "m8_summary.json"
+ },
+ "stress_n": {
+  "text": "8",
+  "value": 8.0,
+  "source": "m8_summary.json"
+ },
+ "stress_base_below": {
+  "text": "3",
+  "value": 3.0,
+  "source": "m8_summary.json"
+ },
+ "tests": {
+  "text": "86",
+  "value": 86.0,
+  "source": "pytest_junit.xml"
+ },
+ "test_fail": {
+  "text": "0",
+  "value": 0.0,
+  "source": "pytest_junit.xml"
+ },
+ "test_skip": {
+  "text": "0",
+  "value": 0.0,
+  "source": "pytest_junit.xml"
+ }
+}

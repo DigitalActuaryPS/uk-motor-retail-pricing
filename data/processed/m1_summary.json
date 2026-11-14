@@ -1,0 +1,16 @@
+{
+  "data_label": "Simulated data",
+  "rows": 200000,
+  "new_business_rows": 140108,
+  "renewal_rows": 59892,
+  "randomised_test_rows": 20905,
+  "nb_conversion_rate": 0.09201110710300915,
+  "renewal_rate": 0.7833266546450277,
+  "avg_nb_premium": 641.8436579716381,
+  "avg_our_rank": 4.5604,
+  "quality_checks_passed": 31,
+  "quality_checks_total": 31,
+  "sha256": "165213e22e28bcefbecb9312d39f782ef975bcd24caf7fc173ad926e5f4fab8f",
+  "date_min": "2023-01-01",
+  "date_max": "2024-12-31"
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retailpricing"
+version = "1.0.0"
+description = "UK Motor Insurance: Retail Pricing, Customer Behaviour and Optimisation (simulated data)"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy", "pandas", "scipy", "statsmodels", "scikit-learn", "lightgbm", "shap", "plotly",
+  "pyyaml", "duckdb", "pyarrow", "streamlit", "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "nbformat", "nbclient", "ipykernel", "kaleido"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore::UserWarning"]

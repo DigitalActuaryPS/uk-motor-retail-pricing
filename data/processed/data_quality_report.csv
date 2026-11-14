@@ -1,0 +1,32 @@
+check,passed,detail
+required columns present,True,19 required
+"row count within 150,000 to 250,000",True,"200,000 rows"
+quote_id unique,True,
+customer_id unique,True,
+no nulls in required fields,True,
+our_premium positive,True,
+competitor prices sorted ascending,True,
+comp_min <= comp_median <= comp_max,True,
+comp_mean between min and max,True,
+rank recomputes from competitor prices,True,
+rank between 1 and n_competitors + 1,True,
+price ratio recomputes,True,
+gap to cheapest recomputes,True,
+converted is 0 or 1,True,
+written premium equals premium when converted,True,
+contribution zero when not converted,True,
+NB rows have tenure 0 and no prior premium,True,
+renewal rows have tenure >= 1 and prior premium,True,
+renewal flag only on renewal rows,True,
+treatment only on new business,True,
+reference equals quoted premium outside test,True,
+valid age bands,True,
+valid regions,True,
+valid channels,True,
+valid risk bands,True,
+quote dates inside configured window,True,
+NB conversion rate plausible (1% to 40%),True,9.201%
+renewal rate plausible (40% to 98%),True,78.333%
+"true probabilities within [0, 1]",True,
+truth aligned to quotes,True,
+data_label is 'Simulated data',True,

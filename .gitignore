@@ -1,0 +1,13 @@
+# Manual comparison-site quotes entered by the requester. Never commit.
+data/manual/manual_quotes.csv
+
+# Large generated files (rebuild with make data)
+data/raw/*.parquet
+data/processed/*.parquet
+data/processed/*.duckdb
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
