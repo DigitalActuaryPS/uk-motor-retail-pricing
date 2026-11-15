@@ -175,8 +175,24 @@ def generate(cfg: Config, seed: int | None = None, n_quotes: int | None = None) 
 
 
 def frame_hash(df: pd.DataFrame) -> str:
-    """Content hash independent of file format."""
+    """Content hash independent of file format and of pandas version.
+
+    Each column is converted to a canonical byte form (float64 or int64 bytes for numbers and
+    datetimes, UTF-8 text for everything else) so the hash does not depend on how a given pandas
+    release hashes objects internally.
+    """
     h = hashlib.sha256()
     h.update(",".join(df.columns).encode())
-    h.update(pd.util.hash_pandas_object(df, index=False).to_numpy().tobytes())
+    for col in df.columns:
+        s = df[col]
+        if pd.api.types.is_bool_dtype(s):
+            raw = s.to_numpy(dtype="int8").tobytes()
+        elif pd.api.types.is_datetime64_any_dtype(s):
+            raw = s.astype("datetime64[ns]").to_numpy().astype("int64").tobytes()
+        elif pd.api.types.is_numeric_dtype(s):
+            raw = s.to_numpy(dtype="float64", na_value=np.nan).tobytes()
+        else:
+            raw = "\x1f".join(s.astype(str).tolist()).encode("utf-8")
+        h.update(col.encode())
+        h.update(raw)
     return h.hexdigest()
